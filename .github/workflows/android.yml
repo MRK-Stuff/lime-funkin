@@ -52,6 +52,7 @@ jobs:
         run: |
           haxelib run lime rebuild hxcpp
           haxelib run lime rebuild android -release
+          haxelib run lime rebuild android -simulator -release
 
       - name: Upload Artifact (ndll/Android)
         uses: actions/upload-artifact@v7
